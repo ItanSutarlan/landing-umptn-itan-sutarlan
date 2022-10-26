@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .jumbotron {
+        @apply text-center font-sans;      
+      }
+      .jumbotron--title {
+        @apply text-5xl font-medium mb-4;
+      }
+      .jumbotron--text {
+        @apply leading-relaxed px-10 mb-7 text-2xl text-gray-600;
+      }
+      .card {
+        @apply border-2 border-black w-96 px-10 py-10;
+      }
+      .card--img {
+        @apply h-24 mx-auto pb-4;
+      }
+      .card--title {
+        @apply pb-2 font-medium text-lg;
+      }
+      .card--description {
+        @apply pb-5 text-gray-600;
+      }
+      .card--btn {
+        @apply border border-black p-1 w-1/2 text-gray-600 hover:text-black text-xs font-bold;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container flex flex-col justify-center mx-auto px-4 py-24 items-center">
+      <div class="jumbotron">
+        <h1 class="jumbotron--title">Ujian Masuk Perusahaan Teknologi <br> Nasional</h1>
+        <p class="jumbotron--text">Pendaftaran ujian masuk perusahaan teknologi nasional dibuka!</p>
+        <button class="font-bold text-gray-600 hover:text-black">Daftar Sekarang</button>
+      </div>
+      <div class="mt-12">
+        <img src="/assets/images/img1.png" alt="">
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="container mx-auto py-8">
+      <div class="flex flex-row justify-between items-center">
+        <figure class="px-4">
+          <img src="/assets/images/img2.png" alt="" class="w-auto">
+        </figure>
+        <div class="text-left items-start">
+          <h2 class="mb-5 mx-4 text-4xl font-medium">Apa itu UMPTN?</h2>
+          <p class="mx-4 mb-7 text-xl text-gray-600">Kegiatan seleksi yang ditujukan untuk menyaring talenta digital yang siap diserap oleh Perusahaan Teknologi Nasional.</p>
+        </div>    
+      </div>
+    </section>
+    <section class="container mx-auto py-8">
+      <div class="text-center flex flex-col items-center">
+        <h2 class="mb-5 mx-4 text-4xl font-medium">Program</h2>
+        <div class="card">
+          <header>
+            <img class="card--img" src="/assets/images/far-capital-logo.jpg" alt="far capital logo">
+            <h3 class="card--title">Ujian Masuk Far Capital</h3>
+          </header>
+          <p class="card--description">Rekrutmen Software Developer untuk FAR Capital Malaysia dengan stack yang diujikan PHP dan Node.js</p>
+          <button class="card--btn">Daftar Sekarang</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
